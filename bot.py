@@ -1,7 +1,7 @@
-"""
+﻿"""
 A3 Multi-Strategy Live Trader
 SL: dynamic clip((close-low)/close, 0.1%-5%)  TP: SL 1:1
-거래소: Bybit USDT-Perp (testnet=DEMO)
+거래소: Bybit USDT-Perp (demo=DEMO)
 """
 import os, sys, time, uuid, logging
 from datetime import datetime, timezone, timedelta
@@ -146,7 +146,7 @@ class Position:
 class A3Trader:
     def __init__(self):
         self.client = HTTP(
-            testnet=DEMO,
+            demo=DEMO,
             api_key=os.environ["BYBIT_API_KEY"],
             api_secret=os.environ["BYBIT_SECRET"],
         )
