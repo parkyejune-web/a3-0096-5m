@@ -1,0 +1,6 @@
+pybit>=5.8.0
+pandas>=2.0.0
+pandas-ta>=0.3.14b
+numpy>=1.26.0
+python-dotenv>=1.0.1
+requests>=2.31.0
